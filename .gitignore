@@ -2,3 +2,6 @@ future-post-office/private/
 .DS_Store
 __pycache__/
 *.pyc
+
+# Archived earlier experiment, not part of the Future Post Office public site.
+leandesk-ai/
