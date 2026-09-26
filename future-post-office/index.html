@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="未来邮局：把今天想说的话、照片和开启日期，做成一颗只能在未来打开的电子时间胶囊。">
+  <title>未来邮局 — 把今天寄给未来</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-mark">✦</span>
+      <span>未来邮局</span>
+    </a>
+    <nav class="nav">
+      <a href="#how">怎么玩</a>
+      <a href="#pricing">价格</a>
+      <a href="#sample">预览</a>
+      <a href="#faq">常见问题</a>
+      <a class="nav-cta" href="builder.html">免费制作预览</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">数字时间胶囊 · 只面向中国大陆</p>
+        <h1>把今天想说的话，寄给未来的某一天。</h1>
+        <p class="lede">
+          不是让AI替你写一封信。你把真实的话、照片和开启日期交给未来邮局，
+          我们帮你封成一颗只能在未来打开的电子时间胶囊。
+        </p>
+        <div class="actions">
+          <a class="button primary" href="builder.html">免费做一个预览</a>
+          <a class="button secondary" href="#contact">微信下单</a>
+        </div>
+        <ul class="trust-list">
+          <li>人民币付款</li>
+          <li>微信沟通</li>
+          <li>不采集隐私数据</li>
+          <li>可设置未来开启日期</li>
+        </ul>
+      </div>
+
+      <aside class="capsule-card">
+        <div class="capsule-top">
+          <span class="capsule-dot"></span>
+          <span>未来胶囊 · 预约开启</span>
+        </div>
+        <div class="capsule-date" id="demo-countdown">距离开启还有 365 天</div>
+        <p class="capsule-title">写给未来的你：</p>
+        <p class="capsule-preview">
+          如果现在的你正在加班、迷茫、觉得一切都很慢，请记住，
+          你曾经在某个普通的夜晚，认真地为未来留下了一句话。
+        </p>
+        <div class="capsule-lock">🔒 到开启日期后，用密码打开</div>
+      </aside>
+    </section>
+
+    <section class="strip">
+      <p>年轻人买的是礼物、仪式感和被记住的感觉。未来邮局卖的不是PDF，而是一段会被保存到未来的体验。</p>
+    </section>
+
+    <section class="section" id="how">
+      <div class="section-heading">
+        <p class="eyebrow">怎么玩</p>
+        <h2>四个步骤，把现在封进未来。</h2>
+      </div>
+      <ol class="steps">
+        <li><span>01</span><div><strong>选择场景</strong><p>生日、纪念日、毕业、异地恋、给未来的自己。</p></div></li>
+        <li><span>02</span><div><strong>填写内容</strong><p>写下想说的话，选择照片、主题和开启日期。</p></div></li>
+        <li><span>03</span><div><strong>微信确认并付款</strong><p>确认版本和交付时间，再通过微信完成付款。</p></div></li>
+        <li><span>04</span><div><strong>收到专属胶囊</strong><p>拿到一个加密网页文件，到指定日期后用密码开启。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section dark-section" id="pricing">
+      <div class="section-heading">
+        <p class="eyebrow">低价冲动消费</p>
+        <h2>一杯奶茶的价格，把一句话留到未来。</h2>
+        <p>所有版本都是一次性付款，不自动续费。先做免费预览，再决定是否下单。</p>
+      </div>
+      <div class="grid three">
+        <article class="price-card">
+          <p class="plan">未来信</p>
+          <p class="price">¥9.9</p>
+          <ul>
+            <li>1封文字信</li>
+            <li>1个主题</li>
+            <li>1个开启日期</li>
+            <li>单文件HTML胶囊</li>
+          </ul>
+          <a class="button full" href="#contact">微信下单</a>
+        </article>
+        <article class="price-card featured">
+          <p class="badge">最受欢迎</p>
+          <p class="plan">记忆胶囊</p>
+          <p class="price">¥19.9</p>
+          <ul>
+            <li>1封文字信</li>
+            <li>最多3张照片</li>
+            <li>密码保护</li>
+            <li>定制封面标题</li>
+            <li>优先交付</li>
+          </ul>
+          <a class="button full primary" href="#contact">做记忆胶囊</a>
+        </article>
+        <article class="price-card">
+          <p class="plan">双人未来信</p>
+          <p class="price">¥29.9</p>
+          <ul>
+            <li>两封独立信件</li>
+            <li>最多6张照片</li>
+            <li>双人主题页</li>
+            <li>纪念日开启</li>
+            <li>优先交付</li>
+          </ul>
+          <a class="button full" href="#contact">送给重要的人</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="sample">
+      <div class="section-heading">
+        <p class="eyebrow">免费预览</p>
+        <h2>先做一颗免费胶囊，看看未来长什么样。</h2>
+        <p>免费版带预览水印，不下单也能体验流程。付费版去掉水印，加入密码保护和更多照片。</p>
+      </div>
+      <div class="preview-panel">
+        <div class="preview-copy">
+          <h3>适合这些人下单</h3>
+          <ul class="check-list">
+            <li>想给对象一个不像淘宝礼物的礼物</li>
+            <li>异地恋、毕业、纪念日、生日</li>
+            <li>想给一年后的自己留一段话</li>
+            <li>想道歉、和好、鼓励正在低谷的人</li>
+            <li>预算不高，但想让对方记住很久</li>
+          </ul>
+        </div>
+        <div class="preview-cta">
+          <p>不用先付款。</p>
+          <a class="button primary full" href="builder.html">打开免费制作器</a>
+          <p class="fine-print">预览不发送任何数据，所有内容只存在你的浏览器里。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-heading">
+        <p class="eyebrow">常见问题</p>
+        <h2>你可能会问的问题。</h2>
+      </div>
+      <div class="faq-grid">
+        <details><summary>这是AI写的吗？</summary><p>你可以自己写，也可以用AI帮你整理语气。最终内容由你确认。未来邮局负责排版、封装、密码和日期开启体验。</p></details>
+        <details><summary>真的必须到日期才能看吗？</summary><p>付费版会根据设备时间显示倒计时，并通过密码保护内容。它适合做仪式感礼物，不适合存放机密信息。</p></details>
+        <details><summary>会不会泄露隐私？</summary><p>预览只保存在浏览器。正式交付默认只保留订单所需信息，交付完成后按约定删除原始材料。</p></details>
+        <details><summary>能不能先免费做完整版？</summary><p>不能。可以免费预览，但正式版需要确认版本和付款，避免无限免费制作。</p></details>
+        <details><summary>支付方式是什么？</summary><p>面向中国大陆客户，只收人民币。先通过微信确认需求，再按约定完成个人转账。</p></details>
+        <details><summary>可以退款吗？</summary><p>未开始制作且无法交付时退款。已经完成并交付的定制文件不因主观改变主意自动退款。</p></details>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div>
+        <p class="eyebrow">微信下单</p>
+        <h2>先说清楚送给谁、什么时候打开。</h2>
+        <p>加上微信后发送：送给谁、场景、开启日期、想选的价格。确认后再付款。</p>
+      </div>
+      <div class="contact-card">
+        <p class="card-label">联系方式</p>
+        <p>微信扫码添加：</p>
+        <img class="contact-qr" src="assets/wechat-contact-qr.svg" alt="未来邮局微信加好友二维码">
+        <button class="button full" type="button" data-copy-wechat>复制备用微信号</button>
+        <p class="fine-print" data-wechat-status>优先扫码添加；备用微信号可能无法被搜索。</p>
+        <p>邮箱：<a href="mailto:roubizhao6@gmail.com">roubizhao6@gmail.com</a></p>
+        <p class="fine-print">付款码不会公开在网站上，只在确认订单后由微信发送。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>未来邮局 · 只面向中国大陆 · 人民币计价 · 微信沟通</p>
+    <p><a href="builder.html">制作预览</a> · <a href="docs/01-product.md">产品说明</a> · <a href="docs/05-privacy-terms.md">隐私与条款</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

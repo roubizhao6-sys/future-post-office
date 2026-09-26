@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="未来邮局免费预览制作器。">
+  <title>免费制作未来胶囊 — 未来邮局</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">✦</span><span>未来邮局</span></a>
+    <nav class="nav">
+      <a href="index.html#pricing">价格</a>
+      <a href="index.html#faq">常见问题</a>
+      <a class="nav-cta" href="index.html#contact">微信下单</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="section-heading">
+      <p class="eyebrow">免费预览制作器</p>
+      <h1 style="font-size:clamp(2.4rem,6vw,4.6rem)">先做一颗只存在于你浏览器里的胶囊。</h1>
+      <p>填完内容后先看效果。免费版带预览水印。正式版去掉水印，增加密码保护、照片和优先交付。</p>
+    </div>
+
+    <div class="builder-layout">
+      <section class="builder-card">
+        <form id="capsule-form">
+          <div class="form-grid">
+            <div class="field">
+              <label for="recipient">送给谁</label>
+              <input id="recipient" name="recipient" maxlength="30" placeholder="例如：一年后的自己" required>
+            </div>
+            <div class="field">
+              <label for="sender">署名</label>
+              <input id="sender" name="sender" maxlength="30" placeholder="例如：今天的你">
+            </div>
+            <div class="field full">
+              <label for="title">胶囊标题</label>
+              <input id="title" name="title" maxlength="50" placeholder="例如：别忘了你为什么出发" required>
+            </div>
+            <div class="field full">
+              <label for="message">想说的话</label>
+              <textarea id="message" name="message" maxlength="4000" placeholder="写下你真正想留下的话。不要写密码、身份证、银行卡等敏感信息。" required></textarea>
+            </div>
+            <div class="field">
+              <label for="openAt">开启日期</label>
+              <input id="openAt" name="openAt" type="datetime-local" required>
+            </div>
+            <div class="field">
+              <label for="theme">主题</label>
+              <select id="theme" name="theme">
+                <option value="dream">梦境紫</option>
+                <option value="dawn">黎明橙</option>
+                <option value="bloom">花期粉</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="password">开启密码</label>
+              <input id="password" name="password" type="password" minlength="4" maxlength="30" placeholder="例如：你们的纪念日" required>
+              <p class="file-note">请把密码单独告诉收件人。密码不会显示在胶囊页面中。</p>
+            </div>
+            <div class="field">
+              <label for="photos">照片（预览版最多1张）</label>
+              <input id="photos" name="photos" type="file" accept="image/png,image/jpeg,image/webp">
+              <p class="file-note">付费版最多3张，双人版最多6张。文件只在本机处理。</p>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit">生成免费预览</button>
+            <button class="button" type="button" id="copy-order">复制下单信息</button>
+            <button class="button primary" type="button" id="download-capsule" hidden>下载正式版胶囊</button>
+          </div>
+          <p class="status" id="builder-status"></p>
+        </form>
+      </section>
+
+      <section class="builder-card">
+        <p class="eyebrow">预览窗口</p>
+        <iframe class="preview-frame" id="preview-frame" title="胶囊预览"></iframe>
+        <p class="fine-print">预览内容不会上传到服务器。正式交付文件由卖家在确认订单后生成。</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="capsule-engine.js"></script>
+  <script>window.CAPSULE_MODE = "preview";</script>
+  <script src="builder.js"></script>
+</body>
+</html>
