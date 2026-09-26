@@ -5,3 +5,6 @@ __pycache__/
 
 # Archived earlier experiment, not part of the Future Post Office public site.
 leandesk-ai/
+
+# Independent product repository cloned into the workspace.
+time-ledger/
